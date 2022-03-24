@@ -6,6 +6,8 @@ if [ "0x" = "${RPI}x" ];then
     echo "\nRun on RaspberryPI\nRun on RaspberryPI\n"
     exit 0 
 fi
+cp ./bin/app /home/pi
+chmod a+x /home/pi/app
 cp ./script/run.sh /home/pi
 chmod a+x /home/pi/run.sh
 mkdir /home/pi/update
