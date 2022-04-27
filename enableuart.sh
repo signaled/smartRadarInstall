@@ -1,7 +1,7 @@
 #!/bin/dash
 
-#CONFIGFILE="/boot/config.txt"
-CONFIGFILE="/workspace/src/smartRadarInstall/config.txt"
+CONFIGFILE="/boot/config.txt"
+#CONFIGFILE="/workspace/src/smartRadarInstall/config.txt"
 RPI=`uname -a | grep raspberrypi | wc -l`
 
 if [ "0x" = "${RPI}x" ];then
